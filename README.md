@@ -1,5 +1,5 @@
 # KuroBot
-A discord bot for personal use. For a replit version, go to the [main page](https://github.com/DavedZrod/KuroBot)
+A discord bot for personal use. For a replit version, go to the [main page](https://github.com/Nazunawa/KuroBot)
 ## THIS PROJECT IS IN PROGRESS
 This will not be fully kept up to date with the replit equivalent.
 
