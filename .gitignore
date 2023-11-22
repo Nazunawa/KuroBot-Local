@@ -1,0 +1,7 @@
+.env
+# Dependencies
+node_modules/
+# OS generated
+.DS_Store
+Thumbs.db
+package-lock.json
