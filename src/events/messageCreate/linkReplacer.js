@@ -27,7 +27,7 @@ module.exports = (message, client) => {
 	};
 	function msgReplace(replacedText){
 		textChannel.send({
-			content: `[BETA]${message.author}**:**  ${replacedText}`, allowedMentions: {parse: []}
+			content: `${message.author}**:**  ${replacedText}`, allowedMentions: {parse: []}
 		})
 		message.delete()
 	};

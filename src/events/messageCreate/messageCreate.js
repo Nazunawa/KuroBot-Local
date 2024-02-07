@@ -1,5 +1,5 @@
 const commands = require('../../commands'); //non-slash commands
-
+const botOwnerID = process.env.botOwnerID;
 module.exports = (message, client) => {
     //Only continue if the message isn't from a bot
 	if (message.author.bot) { //Only respond to non-bots
