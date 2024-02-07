@@ -1,7 +1,7 @@
 module.exports = {
 	data: {
 		name: 'vx',
-		description: 'Description here',
+		description: 'Converts twitter links to vx while also',
 		options: [
 			{
 				name: 'text',
