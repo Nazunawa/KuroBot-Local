@@ -6,10 +6,6 @@ module.exports = (message, client) => {
 		return;
 	}
 
-	const textChannel = message.channel //get the channel from where the message is
-	//console.log(message.content);
-	console.log(message.author.username, ": ", message.content);
-
 	if (message.content.startsWith('k-')) { //use a prefix, "k,"
 		const args = message.content.slice(2).trim().split(/ +/);
 		const userCommand = args.shift().toLocaleLowerCase();

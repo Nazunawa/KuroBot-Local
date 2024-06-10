@@ -24,4 +24,26 @@ new CommandKit({
 
 });
 
+let delay = 0; // Initial delay in seconds
+function reconnectWithDelay(delay) {
+    setTimeout(() => {
+        console.log('Attempting to reconnect...');
+        client.login(process.env.TOKEN); // Attempt to reconnect
+
+    }, delay * 1000); // Convert seconds to milliseconds
+}
+
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+    
+    if ((err.code === 'ENOTFOUND' && err.hostname === 'discord.com')|| err.code === 'ECONNRESET' || err.code === 'ETIMEDOUT' || err.code === 'ECONNREFUSED') {
+        delay += 5;
+        console.log(`Reconnecting in ${delay} seconds...`);
+        reconnectWithDelay(delay);
+    } else {
+        // console.error('Unhandled error:', err);
+        delay = 5;
+    }
+});
+
 client.login(process.env.TOKEN);

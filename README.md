@@ -7,8 +7,9 @@ This branch is only for those who want to host it out of replit (In replit, it u
 1. [Current Features](#current-features)
 2. [Dependencies](#dependencies)
 3. [Hosting it](#hosting-it)
+
 ## Current Features
-- Replacing twitter links with vxtwitter (can be configured to other links)
+- Replacing twitter links with vxtwitter and other links (can be configured in the [config](src/events/messageCreate/linkReplacerConfig.js) and [linkReplacer](src/events/messageCreate/linkReplacer.js))
     - Vx-ivy slash command (instead of deleting your message)
 - Custom message replies
 
@@ -17,9 +18,8 @@ This branch is only for those who want to host it out of replit (In replit, it u
 - [commandkit](https://commandkit.js.org/)
 - [dotenv](https://www.dotenv.org/)
 
-
 ## Hosting it
-1. Download it (git clone, download zip, whichever)
+1. Download it (git clone, zip, whichever)
 2. Install dependencies
     - Run ```npm i```
     - Optional: nodemon ```npm i nodemon```
